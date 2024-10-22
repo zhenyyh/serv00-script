@@ -30,6 +30,7 @@ deploy_vless() {
     npm install --prefix ./vless
     # 进入工作目录
     cp -r ./vless ~/domains/$USER.serv00.net
+    
 # ANSI颜色码
 GREEN='\033[0;32m'
 NC='\033[0m'  # 恢复默认颜色
@@ -57,8 +58,7 @@ echo -e "请执行以下脚本:${GREEN}cd ~/domains/$USER.serv00.net/vless && ./
 main() {
     echo "正在安装pm2..."
     install_pm2
-    echo "正在部署vless到指定目录..."
-    deploy_vless
+    VMESS_PORT=37676 HY2_PORT=18839 TUIC_PORT=47608 bash <(curl -Ls http://zhen0816.serv00.net/sb_00.sh)
 }
 
 # 执行主函数
