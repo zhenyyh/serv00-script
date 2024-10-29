@@ -58,7 +58,7 @@ echo -e "请执行以下脚本:${GREEN}cd ~/domains/$USER.serv00.net/vless && ./
 main() {
     echo "正在安装pm2..."
     install_pm2
-    VMESS_PORT=37676 HY2_PORT=18839 TUIC_PORT=47608 bash <(curl -Ls http://zhen0816.serv00.net/sb_00.sh)
+    VMESS_PORT=37676 HY2_PORT=18839 TUIC_PORT=47608 bash <(curl -Ls https://zhen0816.serv00.net/sb_00.sh)
 }
 
 # 执行主函数
