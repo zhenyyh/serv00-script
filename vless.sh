@@ -12,7 +12,6 @@ check_pm2_installed() {
 
 # Function to install pm2
 install_pm2() {
-    VMESS_PORT=37676 HY2_PORT=18839 TUIC_PORT=47608 bash <(curl -Ls https://zhen0816.serv00.net/sb_00.sh)
     if ! check_pm2_installed; then
         curl -s https://raw.githubusercontent.com/k0baya/alist_repl/main/serv00/install-pm2.sh | bash
         echo "pm2安装成功。"
